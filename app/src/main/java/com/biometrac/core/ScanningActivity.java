@@ -238,16 +238,6 @@ public class ScanningActivity extends Activity{
             }
         });
 
-        //Disabled Bash
-        /*
-        restart_scanner.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                bash_scanner(v);
-                return true;
-            }
-        });
-        */
         mPermissionIntent = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), 0);
 
     }
