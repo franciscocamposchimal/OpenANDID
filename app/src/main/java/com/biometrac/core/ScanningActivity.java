@@ -248,6 +248,8 @@ public class ScanningActivity extends Activity{
             }
         });
         */
+        mPermissionIntent = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), 0);
+
     }
 
     private void setCorrectContentView(Configuration configuration) {
