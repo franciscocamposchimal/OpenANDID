@@ -21,7 +21,8 @@
         android:label="Biometrac Core"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:launchMode="singleTop">
         <receiver android:name="broadcast.ScannerReceiver">
             <intent-filter>
                 <action android:name="com.biometrac.screentest.ScanningActivity.USB_PERMISSION"/>
@@ -98,7 +99,8 @@
             android:name=".PipeActivity"
             android:label="VirtualCohort" 
             android:screenOrientation="portrait"
-            android:noHistory="false" >
+            android:noHistory="false"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.View" />
                 <category android:name="android.intent.category.DEFAULT"/>
